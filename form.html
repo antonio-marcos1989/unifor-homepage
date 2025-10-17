@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu formulário</title>
+</head>
+<body>
+    <h1>Meu Formulário</h1>
+
+    <form method="get" action="#">
+        <fieldset style="width:50%">
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="nome">Nome:</label><br>
+                <input type="text" name="nome" id="nome" required>
+            </p>
+            <p>
+                <label for="sobrenome">Sobrenome:</label><br>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </p>
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email" required>
+            </p>
+            <p>
+                <label for="senha">Senha:</label><br>
+                <input type="password" name="senha" id="senha" required>
+            </p>
+            <p>
+                <label for="data">Data de Nasc.:</label><br>
+                <input type="date" name="data" id="data" required>
+            </p>
+            <label for="escolaridade">Escolaridade:</label><br>
+            <select name="escolaridade" id="escolaridade" required>
+                <option value="">Selecione</option>
+                <option value="1">Ens. Fundamental</option>
+                <option value="2">Ens. Médio</option>
+                <option value="3">Ens. Superior</option>
+            </select>
+            <p>
+                <label>Sexo:</label><br>
+                <input type="radio" name="sexo" id="M" value="M"><label for="M">Masculino</label>
+                <input type="radio" name="sexo" id="F" value="F"><label for="F">Feminino</label>
+            </p>
+            <p>
+                <label>Esportes favoritos:</label><br>
+                <input type="checkbox" name="esportes" id="Fut" value="1"><label for="Fut">Futebol</label>
+                <input type="checkbox" name="esportes" id="Ten" value="2"><label for="Ten">Tênis</label>
+                <input type="checkbox" name="esportes" id="Basq" value="3"><label for="Basq">Basquete</label>
+            </p>
+            <p>
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Enviar">
+            </p>
+        </fieldset>
+    </form>
+
+</body>
+</html>
